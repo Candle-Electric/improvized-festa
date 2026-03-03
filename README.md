@@ -15,6 +15,7 @@ Great Thanks As Always To:
 * Orc Face Games and the Organizers and Participants of DreamDisc '25
 * Derek (ateam)
 * Speud
+* Bruce Leeto
 * ProgrammingDude2004 A.K.A. NeoGeoFreak2004
 * Many more Folks, who I'm forgetting at the moment...
 * And you, for playing!
