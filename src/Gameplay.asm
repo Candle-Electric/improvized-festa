@@ -32,7 +32,7 @@ Runner_Gameplay:
 	;test_var = $29
 	;boulder_x = $2a
 	;boulder_y = $2b
-
+    player_horizontal_acceleration  =       $32     ; 1 Byte
 ; Set Sprite Addresses
 	mov	#8, player_sprite_x
 	mov	#14, player_sprite_y
@@ -332,4 +332,5 @@ Gameplay_Loop:
 	; callf Draw_Ground
 	P_Blit_Screen
 	inc frame_counter
+
 	jmpf Gameplay_Loop
