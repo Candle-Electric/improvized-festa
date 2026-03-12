@@ -163,6 +163,9 @@ Gameplay_Loop:
     ld boulder_chunk_0
     add boulder_chunk_1
     bz .Collision_Done ; Remember: Note To Change these To 30 and #31, Or Whatever The Chunks Were Assigned As. If The 2 Leftmost Chunk Stations (Where The Player Is.) Don't Have Obstacles, Skip Collision And Save The Cycles.
+    ld player_sprite_x
+    add #7
+    ; sub chunk_displacement_Offset
 .Collision_Done
 
 .Handle_Stun_Timer
@@ -336,4 +339,5 @@ Gameplay_Loop:
 	inc frame_counter
 
 	jmpf Gameplay_Loop
+
 
