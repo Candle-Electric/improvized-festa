@@ -33,6 +33,7 @@ Runner_Gameplay:
 	;boulder_x = $2a
 	;boulder_y = $2b
     player_horizontal_acceleration  =       $32     ; 1 Byte
+    collision_flags                 =       $33     ; 1 Byte
 ; Set Sprite Addresses
 	mov	#8, player_sprite_x
 	mov	#14, player_sprite_y
