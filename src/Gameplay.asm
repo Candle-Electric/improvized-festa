@@ -167,6 +167,9 @@ Gameplay_Loop:
     ld player_sprite_x
     add #7
     ; sub chunk_displacement_Offset
+	bz .Keep_Colliding
+	jmpf .Collision_Done
+.Keep_Colliding
 .Collision_Done
 
 .Handle_Stun_Timer
