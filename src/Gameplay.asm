@@ -230,7 +230,7 @@ Gameplay_Loop:
 	P_Draw_Sprite_Mask player_sprite_sprite_address, player_sprite_x, player_sprite_y
 
 .Draw_Obstacles
-; jmpf .OkScrewTheBoulders
+; jmpf .OkScrewTheBoulders ; Debugging Functions
 .Draw_Obstacle_6
 	ld boulder_screen_offset
 	bz .Draw_Obstacle_5
