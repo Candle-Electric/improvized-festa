@@ -90,8 +90,10 @@ Gameplay_Loop:
 	bz .B_Pressed
 	mov #6, player_acceleration
 	mov #0, player_grounded_bool
+    jmpf .Calculate_Position ; In Case A + B Are Pressed At The Same Time.
 .A_Depressed
 .B_Pressed
+    ld player_grounded_bool
 .Calculate_Position
 	bp player_grounded_bool, 0, .Skip_Grounding
 	dec player_acceleration
