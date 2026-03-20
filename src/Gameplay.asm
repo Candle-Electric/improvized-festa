@@ -94,6 +94,9 @@ Gameplay_Loop:
 .A_Depressed
 .B_Pressed
     ld player_grounded_bool
+    bz .Calculate_Position
+    mov #6, player_acceleration
+    mov #0, Player_Grounded_Bool
 .Calculate_Position
 	bp player_grounded_bool, 0, .Skip_Grounding
 	dec player_acceleration
