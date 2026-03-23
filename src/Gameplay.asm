@@ -177,6 +177,8 @@ Gameplay_Loop:
 .Keep_Colliding
     LD Player_Sprite_Y
     ld boulder_chunk_offset
+	bnz .Collision_Chunk_1
+.Collision_Chunk_1
     mov %11111111, Collision_Flags
     ; Optionally, Maybe Try Assigning Based On Obstacle Type.
 .Collision_Done
