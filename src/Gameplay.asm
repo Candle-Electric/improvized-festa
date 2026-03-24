@@ -179,6 +179,9 @@ Gameplay_Loop:
     ld boulder_chunk_offset
 	bnz .Collision_Chunk_1
 .Collision_Chunk_1
+	sub #1
+	bnz .Collision_Chunk_2
+.Collision_Chunk_2
     mov %11111111, Collision_Flags
     ; Optionally, Maybe Try Assigning Based On Obstacle Type.
 .Collision_Done
