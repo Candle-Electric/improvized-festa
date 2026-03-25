@@ -181,7 +181,11 @@ Gameplay_Loop:
 .Collision_Chunk_1
 	sub #1
 	bnz .Collision_Chunk_2
+	ld player_y
+	; Sub Distance Over The Obstacle, Depending On Type.
 .Collision_Chunk_2
+	sub #1
+	bnz. Collision_Chunk_3
     mov %11111111, Collision_Flags
     ; Optionally, Maybe Try Assigning Based On Obstacle Type.
 .Collision_Done
