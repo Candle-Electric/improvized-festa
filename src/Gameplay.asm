@@ -185,6 +185,7 @@ Gameplay_Loop:
 	; Sub Distance Over The Obstacle, Depending On Type.
     sub # 18 
     bp acc, 7, .Collision_Chunk_2
+    mov #1, collision_active
 .Collision_Chunk_2
 	sub #1
 	bnz. Collision_Chunk_3
