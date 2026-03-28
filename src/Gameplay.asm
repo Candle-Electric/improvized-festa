@@ -186,6 +186,7 @@ Gameplay_Loop:
     sub # 18 
     bp acc, 7, .Collision_Chunk_2
     mov #1, collision_active
+    jmpf .Collision_Done
 .Collision_Chunk_2
 	sub #1
 	bnz. Collision_Chunk_3
