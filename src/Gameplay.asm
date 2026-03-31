@@ -194,7 +194,7 @@ Gameplay_Loop:
     mov %11111111, Collision_Flags
     ; Optionally, Maybe Try Assigning Based On Obstacle Type.
 	jmpf .Collision_Done
-Collision_Chunk_3
+.Collision_Chunk_3
 .Collision_Done
 
 .Handle_Stun_Timer
