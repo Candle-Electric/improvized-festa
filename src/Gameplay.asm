@@ -195,6 +195,7 @@ Gameplay_Loop:
     ; Optionally, Maybe Try Assigning Based On Obstacle Type.
 	jmpf .Collision_Done
 .Collision_Chunk_3
+    sub #1 ; 8
 .Collision_Done
 
 .Handle_Stun_Timer
