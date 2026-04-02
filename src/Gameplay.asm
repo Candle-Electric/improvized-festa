@@ -196,6 +196,8 @@ Gameplay_Loop:
 	jmpf .Collision_Done
 .Collision_Chunk_3
     sub #1 ; 8
+    bnz .Collision_Chunk_4
+.Collision_Chunk_4
 .Collision_Done
 
 .Handle_Stun_Timer
