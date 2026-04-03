@@ -198,6 +198,7 @@ Gameplay_Loop:
     sub #1 ; 8
     bnz .Collision_Chunk_4
 .Collision_Chunk_4
+    sub #1
 .Collision_Done
 
 .Handle_Stun_Timer
