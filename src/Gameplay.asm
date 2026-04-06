@@ -197,7 +197,7 @@ Gameplay_Loop:
 .Collision_Chunk_3
     sub #1 ; 8
     bnz .Collision_Chunk_4
-	ld player_y
+	ld player_sprite_y
 .Collision_Chunk_4
     sub #18
     bnz .Collision_Chunk_5
