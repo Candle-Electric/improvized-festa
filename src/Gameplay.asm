@@ -200,8 +200,9 @@ Gameplay_Loop:
 	ld player_sprite_y
     jmpf
 .Collision_Chunk_4
-    sub #18
-    bnz .Collision_Chunk_5
+    ld player_sprite_y
+    sub #18 ; Is Player Above Stone Rock?
+    bnz .Collision_Chunk_5 ; Move this Up
 .Collision_Done
 
 .Handle_Stun_Timer
