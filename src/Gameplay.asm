@@ -204,6 +204,7 @@ Gameplay_Loop:
     bnz .Collision_Chunk_5 ; Move this Up
     ld player_sprite_y
     sub #18 ; Is Player Above Stone Rock?
+	bp acc, 7, .Collision_Chunk_5 ; If So, Player's Cleared It + The Collision Check.
 .Collision_Done
 
 .Handle_Stun_Timer
