@@ -205,7 +205,7 @@ Gameplay_Loop:
     ld player_sprite_y
     sub #18 ; Is Player Above Stone Rock?
 	bp acc, 7, .Collision_Chunk_5 ; If So, Player's Cleared It + The Collision Check.
-    mov #1, flag
+    mov #1, collision_flags
 .Collision_Done
 
 .Handle_Stun_Timer
