@@ -198,6 +198,7 @@ Gameplay_Loop:
     sub #1 ; 8
     bnz .Collision_Chunk_4
 	ld player_sprite_y
+     mov #1, Flags_2
     jmpf
 .Collision_Chunk_4
 	sub #1
