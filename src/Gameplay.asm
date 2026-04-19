@@ -208,6 +208,7 @@ Gameplay_Loop:
 	bp acc, 7, .Collision_Chunk_5 ; If So, Player's Cleared It + The Collision Check.
     mov #1, collision_flags
 .Alternate_Collision
+    bn boulder_chunk_offset, 1, .Collision_Done ; Skip Check For Collision When Not In Boulder Range.
 .Collision_Done
 
 .Handle_Stun_Timer
