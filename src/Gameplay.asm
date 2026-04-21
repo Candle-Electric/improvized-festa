@@ -209,6 +209,7 @@ Gameplay_Loop:
     mov #1, collision_flags
 .Alternate_Collision
     bn boulder_chunk_offset, 1, .Collision_Done ; Skip Check For Collision When Not In Boulder Range.
+    ; L.D. Obstacle Type Here And Determine Jump Path 
     ld player_sprite_y
 .Collision_Done
 
