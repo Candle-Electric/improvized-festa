@@ -211,7 +211,8 @@ Gameplay_Loop:
     bn boulder_chunk_offset, 1, .Collision_Done ; Skip Check For Collision When Not In Boulder Range.
     ; L.D. Obstacle Type Here And Determine Jump Path 
     ld player_sprite_y
-    sub
+    sub #18
+    bn acc, 7
 .Collision_Done
 
 .Handle_Stun_Timer
