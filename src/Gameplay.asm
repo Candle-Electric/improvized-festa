@@ -212,7 +212,7 @@ Gameplay_Loop:
     ; L.D. Obstacle Type Here And Determine Jump Path 
     ld player_sprite_y
     sub #18
-    bn acc, 7
+    bn acc, 7, Collision_Done
 .Collision_Done
 
 .Handle_Stun_Timer
