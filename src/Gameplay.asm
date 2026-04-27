@@ -213,6 +213,7 @@ Gameplay_Loop:
     ld player_sprite_y
     sub #17
     bn acc, 7, Collision_Done
+    mov #255, Collision_Flags
 .Collision_Done
 
 .Handle_Stun_Timer
