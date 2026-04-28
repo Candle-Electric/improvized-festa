@@ -1,7 +1,7 @@
 ;=======================;
 ;       Gameplay        ;
 ;=======================;
-Runner_Gameplay:
+Runner_Gameplay: ; Penguin Rename
 	player_sprite_x					=		$6		; 1 Byte
 	player_sprite_y					=		$7		; 1 Byte
 	player_sprite_sprite_address	=		$8		; 2 Bytes
