@@ -216,6 +216,7 @@ Gameplay_Loop:
     bn acc, 7, Collision_Done
     mov #255, Collision_Flags
 .Cillision_HighBoulder ; Let's Pretend For Now.
+    ; Done with the L.D.C.?
 .Collision_Done
 
 .Handle_Stun_Timer
