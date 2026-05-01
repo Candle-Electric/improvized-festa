@@ -219,6 +219,8 @@ Gameplay_Loop:
     ; Done with the L.D.C.?
 .Collision_Done
 
+.Handle_Collision_Result
+
 .Handle_Stun_Timer
 	; bp player_stunned_bool, 0, .Draw_Screen
 	ld stun_timer
