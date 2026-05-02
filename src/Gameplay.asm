@@ -220,6 +220,8 @@ Gameplay_Loop:
 .Collision_Done
 
 .Handle_Collision_Result
+	ld Collision_Flags
+	; bnz .Player_State_Collision_Done_Set
 
 .Handle_Stun_Timer
 	; bp player_stunned_bool, 0, .Draw_Screen
