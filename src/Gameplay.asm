@@ -223,6 +223,7 @@ Gameplay_Loop:
 .Handle_Collision_Result
 	ld Collision_Flags
 	; bnz .Player_State_Collision_Done_Set
+	; Instaniate A Player_Stunned Variable, And Have The Penguin Hop In Place When Stunned?
 
 .Handle_Stun_Timer
 	; bp player_stunned_bool, 0, .Draw_Screen
