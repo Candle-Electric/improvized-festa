@@ -209,13 +209,16 @@ Gameplay_Loop:
     mov #1, collision_flags
 .Alternate_Collision
     bn boulder_chunk_offset, 1, .Collision_Done ; Skip Check For Collision When Not In Boulder Range.
-    ; L.D. Obstacle Type Here And Determine Jump Path hi
+    ; L.D. Obstacle Type Here And Determine Jump Path .Handle_Collision_Result
+	ld Collision_Flags
 .Collision_RegularBoulder
     ld player_sprite_y
     sub #17
     bn acc, 7, Collision_Done
     mov #255, Collision_Flags
     mov #11, stun_timer
+    ; mov #0, Stun_Direction ; Meaning Left. Consider A 1 Variable Of 8 Flags.
+    ; Once Grounded, Switch Directions And Keep Bouncing And Setting Bits Until Flag_Var = 255
 .Cillision_HighBoulder ; Let's Pretend For Now.
     ; Done with the L.D.C.?
 .Collision_Done
