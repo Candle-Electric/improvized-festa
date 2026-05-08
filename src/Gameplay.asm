@@ -230,7 +230,7 @@ Gameplay_Loop:
 	mov #1, Player_Stunned
 	; *Then, Possibly Moveing this to the Player Control Section, If Player_Stunned = 1/"Y," they'll bounce left/right on an Oscillator and up+down on the Frame Counter.
 	mov #128, StunFlags ; Leftmost Flag = Direction
-
+    ; dec stun_rise_timer ; Initial Hop. -1 Y, Then 0 &And +1 Y Once it's Done.
 .Handle_Stun_Timer
 	; bp player_stunned_bool, 0, .Draw_Screen
 	ld stun_timer
