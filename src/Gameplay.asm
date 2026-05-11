@@ -219,7 +219,7 @@ Gameplay_Loop:
     mov #11, stun_timer
     ; mov #0, Stun_Direction ; Meaning Left. Consider A 1 Variable Of 8 Flags.
     ; Once Grounded, Switch Directions And Keep Bouncing And Setting Bits Until Flag_Var = 255
-    ; bp Flag_Bit (Direction)
+    ; bp Flag_Bit (Direction) {When Landed, Move this Line Near .Stun_Drop + Do A "Grounded" Check.}/.
 .Cillision_HighBoulder ; Let's Pretend For Now.
     ; Done with the L.D.C.?
 .Collision_Done
