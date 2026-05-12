@@ -233,8 +233,9 @@ Gameplay_Loop:
 	mov #128, StunFlags ; Leftmost Flag = Direction
     ; dec stun_rise_timer ; Initial Hop. -1 Y, Then 0 &And +1 Y Once it's Done.
     ; ld stun_rise_timer
-    ; bz .Stun_Hop
+    ; bz .Stun_Hop ; Move Up.!
 	; jmpf .Stun_Drop
+	inc Player_Sprite_Y
 .Handle_Stun_Timer
 	; bp player_stunned_bool, 0, .Draw_Screen
 	ld stun_timer
