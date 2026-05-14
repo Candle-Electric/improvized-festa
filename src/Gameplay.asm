@@ -236,6 +236,7 @@ Gameplay_Loop:
     ; bz .Stun_Hop ; Move Up.!
 	; jmpf .Stun_Drop
 	inc Player_Sprite_Y
+    ; Set1 The Flag When Timer's Up.
 .Handle_Stun_Timer
 	; bp player_stunned_bool, 0, .Draw_Screen
 	ld stun_timer
