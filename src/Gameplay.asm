@@ -239,6 +239,8 @@ Gameplay_Loop:
 	; jmpf .Stun_Drop
 	inc Player_Sprite_Y
     ; Set1 The Flag When Timer's Up.
+    ; Now, Y-Velocity = 1,
+	; Then, when you come back to here, it's 1 but the Timer is 0, so now make it 2.
 .Handle_Stun_Timer
 	; bp player_stunned_bool, 0, .Draw_Screen
 	ld stun_timer
