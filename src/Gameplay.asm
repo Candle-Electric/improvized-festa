@@ -51,7 +51,7 @@ Gameplay_Loop:
 	mov #1, player_standing_bool
 .Check_Input
 	ld stun_timer
-	bnz .Calculate_Position
+	bnz .Calculate_Position ; Da Stun Flag Might Also Be Considered Here?
 	callf Get_Input ; This Function Is Via LibKCommon.ASM
 	ld p3
 .Check_Up
