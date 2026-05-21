@@ -254,7 +254,7 @@ Gameplay_Loop:
 	jmpf .Draw_Screen
 .Reset_Stun
 	; mov #1, player_stunned_bool
-	mov #0, stun_timer
+	mov #0, stun_timer ; Mov #Grounded, Player Y ?
     ; Now, can keep the Timer as 0 while still Locking Control Until Grounded. Might Lead To Softlocks; Need To Test.
 
 .Draw_Screen
