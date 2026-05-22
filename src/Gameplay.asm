@@ -223,7 +223,7 @@ Gameplay_Loop:
 	; Alternatively, Do Stun_Bounce Same As Jump's Gravity, Capped At 2. 
 	; ld Player_Sprite_Y, Add/Sub Stun_Bounce, Is Stun_Bounce <*> +/-2? Dec Stun_Bounce.
 	; Once Done Bouncing And Changing Directions, Restore Control.
-	; Flag Set
+	; Flag Set. Skip All Other Collision In The Meantime?
 .Cillision_HighBoulder ; Let's Pretend For Now.
     ; Done with the L.D.C.?
 .Collision_Done
