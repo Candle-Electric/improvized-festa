@@ -225,7 +225,7 @@ Gameplay_Loop:
 	; Once Done Bouncing And Changing Directions, Restore Control.
 	; Flag Set. Skip All Other Collision In The Meantime?
     ; 7 6 5 4 3 2 1 0 ; Set, Direction., {.Up Timer.?} , [ . . Timer . . ]
-.Cillision_HighBoulder ; Let's Pretend For Now.
+.Cillision_HighBoulder ; Let's Pretend For Now. ; This time, it'll be Y < 8.
     ; Done with the L.D.C.?
 .Collision_Done
 
