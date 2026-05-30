@@ -228,6 +228,7 @@ Gameplay_Loop:
 .Cillision_HighBoulder ; Let's Pretend For Now. ; This time, it'll be Y < 8.
     ld Player_Sprite_Y ; Done with the L.D.C.?
     sub #8
+	bp acc, 7, .Collision_HighB_Yes
 .Collision_Done
 
 .Handle_Collision_Result
