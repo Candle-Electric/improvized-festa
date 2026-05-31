@@ -229,6 +229,9 @@ Gameplay_Loop:
     ld Player_Sprite_Y ; Done with the L.D.C.?
     sub #8
 	bp acc, 7, .Collision_HighB_Yes
+	jmpf Collision_Done
+.Collision_HighB_Yes
+	mov
 .Collision_Done
 
 .Handle_Collision_Result
