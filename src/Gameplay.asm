@@ -231,7 +231,7 @@ Gameplay_Loop:
 	bp acc, 7, .Collision_HighB_Yes
 	jmpf Collision_Done
 .Collision_HighB_Yes
-	mov
+	mov #255, Collision_Flags
 .Collision_Done
 
 .Handle_Collision_Result
