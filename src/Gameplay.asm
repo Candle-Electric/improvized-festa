@@ -217,6 +217,7 @@ Gameplay_Loop:
     bn acc, 7, Collision_Done
     mov #255, Collision_Flags
     mov #11, stun_timer
+	jmpf .Collision_Done
     ; mov #0, Stun_Direction ; Meaning Left. Consider A 1 Variable Of 8 Flags.
     ; Once Grounded, Switch Directions And Keep Bouncing And Setting Bits Until Flag_Var = 255
     ; bp Flag_Bit (Direction) {When Landed, Move this Line Near .Stun_Drop + Do A "Grounded" Check.}/.
