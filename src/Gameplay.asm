@@ -228,6 +228,7 @@ Gameplay_Loop:
     ; 7 6 5 4 3 2 1 0 ; Set, Direction., {.Up Timer.?} , [ . . Timer . . ]
 .Cillision_HighBoulder ; Let's Pretend For Now. ; This time, it'll be Y < 8.
 	; Check if L.D.C. Returns #30, #31, Etc.
+	ld boulder_chunk_1 ; Then Sub #30
     ld Player_Sprite_Y ; Done with the L.D.C.?
     sub #8
 	bp acc, 7, .Collision_HighB_Yes
