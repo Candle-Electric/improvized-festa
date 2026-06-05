@@ -199,7 +199,7 @@ Gameplay_Loop:
     bnz .Collision_Chunk_4
 	ld player_sprite_y
      mov #1, Flags_2
-    jmpf . Collision_Done
+    jmpf . Collision_Done ; JMPF To .Collision_RegularBoulder If In Chunk Range.
 .Collision_Chunk_4
 	sub #1
     bnz .Collision_Chunk_5 ; Move this Up
