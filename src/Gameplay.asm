@@ -373,7 +373,7 @@ Gameplay_Loop:
 	bp boulder_chunk_0, 0, .Build_Error_1; .OkScrewTheBoulders
 	jmpf .OkScrewTheBoulders
 .Build_Error_1
-.Obstacle_0_0
+.Obstacle_0_0 ; Check Obstacle Type First, Here.
 	ld boulder_screen_offset
 	bnz .Obstacle_0_3
 	mov	#<Boulder_Sprite_Offscreen_Mask_2, half_boulder_sprite_address
