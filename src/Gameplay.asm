@@ -240,7 +240,7 @@ Gameplay_Loop:
 .Handle_Collision_Result
 	ld Collision_Flags
 	; bnz .Player_State_Collision_Done_Set
-	; mov #<>Debugging_Sprite, 
+	; mov #<>Debugging_Sprite, player_sprite_sprite_address+1
 	; Instaniate A Player_Stunned Variable, And Have The Penguin Hop In Place When Stunned?
 	mov #1, Player_Stunned
 	; *Then, Possibly Moveing this to the Player Control Section, If Player_Stunned = 1/"Y," they'll bounce left/right on an Oscillator and up+down on the Frame Counter.
