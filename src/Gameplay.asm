@@ -230,7 +230,7 @@ Gameplay_Loop:
 	; Check if L.D.C. Returns #30, #31, Etc.
 	ld boulder_chunk_1 ; Then Sub #30
     ld Player_Sprite_Y ; Done with the L.D.C.?
-    sub #8
+    sub #8 ;
 	bp acc, 7, .Collision_HighB_Yes
 	jmpf Collision_Done
 .Collision_HighB_Yes
