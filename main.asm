@@ -146,6 +146,7 @@ goodbye:
 .include		"./img/Boulder_Sprite_Offscreen_Mask_2.asm"
 .include		"./img/Penguin_Jump_Up_Mask.asm"
 .include		"./img/Penguin_Standing_Mask.asm"
+.include		"./img/Penguin_Stunned_01.asm" ; 02
 .include		"./img/Debugging_Sprite_Mask.asm"
 
 ;=======================;
