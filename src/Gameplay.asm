@@ -296,6 +296,7 @@ Gameplay_Loop:
 	jmpf .Draw_Obstacles
 .Stunned
 	; Different For Rising Vs. Bouncing Back + Forth?
+	ld player_stunned_bool
 .Jumping
 	bp player_grounded_bool, 0, .Draw_Trot_L
 	mov #<Penguin_Jump_Up_Mask, player_sprite_sprite_address
