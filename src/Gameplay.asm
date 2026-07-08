@@ -299,6 +299,7 @@ Gameplay_Loop:
 	ld player_stunned_bool
     bnz .Jumping ; / Standing, Note this should Go Before The others.
 	; ld Stun_Direction
+	; bnz .Draw_Penguin_Stunned_R
 	mov #<Penguin_Stunned_L, player_sprite_address ; Set this Along With the Movement Logic Part.
 	mov #>PEnguin_Stunned_L, player_sprite_address+1
 .Jumping
