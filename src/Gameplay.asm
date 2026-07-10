@@ -298,11 +298,13 @@ Gameplay_Loop:
 	; Different For Rising Vs. Bouncing Back + Forth?
 	ld player_stunned_bool
     bnz .Jumping ; / Standing, Note this should Go Before The others.
+;.Draw_Penguin_Stunned_L
 	; ld Stun_Direction
 	; bnz .Draw_Penguin_Stunned_R
 	mov #<Penguin_Stunned_L, player_sprite_address ; Set this Along With the Movement Logic Part.
 	mov #>PEnguin_Stunned_L, player_sprite_address+1
 ;.Draw_Penguin_Stunned_R
+	; mov
 .Jumping
 	bp player_grounded_bool, 0, .Draw_Trot_L
 	mov #<Penguin_Jump_Up_Mask, player_sprite_sprite_address
