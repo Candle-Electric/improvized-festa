@@ -304,7 +304,8 @@ Gameplay_Loop:
 	mov #<Penguin_Stunned_L, player_sprite_address ; Set this Along With the Movement Logic Part.
 	mov #>PEnguin_Stunned_L, player_sprite_address+1
 ;.Draw_Penguin_Stunned_R
-	; mov#<Penguin_Stunned_R, player_sprite_Address+1
+	; mov#>Penguin_Stunned_R, player_sprite_Address+1
+	; mov#<Penguin_Stunned_R, player_sprite_Address
 .Jumping
 	bp player_grounded_bool, 0, .Draw_Trot_L
 	mov #<Penguin_Jump_Up_Mask, player_sprite_sprite_address
