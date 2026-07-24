@@ -303,6 +303,7 @@ Gameplay_Loop:
 	; bnz .Draw_Penguin_Stunned_R
 	mov #<Penguin_Stunned_L, player_sprite_address ; Set this Along With the Movement Logic Part.
 	mov #>PEnguin_Stunned_L, player_sprite_address+1
+	jmpf .Daw_Trot_Done
 ;.Draw_Penguin_Stunned_R
 	; mov#>Penguin_Stunned_R, player_sprite_Address+1
 	; mov#<Penguin_Stunned_R, player_sprite_Address
