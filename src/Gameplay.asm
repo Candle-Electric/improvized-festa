@@ -29,7 +29,7 @@ Runner_Gameplay: ; Penguin Rename
 	boulder_sprite_address			=		$27		; 2 Bytes
 	half_boulder_sprite_address		=		$29		; 2 Bytes
 	player_standing_bool			=		$31		; 1 Byte
-	;test_var = $29
+	;test_var 						=		$29		; 1 Byte
 	;boulder_x = $2a
 	;boulder_y = $2b
     player_horizontal_acceleration  =       $32     ; 1 Byte
