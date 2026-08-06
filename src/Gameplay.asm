@@ -7,7 +7,7 @@ Penguin_Gameplay: ; Penguin Runner Rename
 	player_sprite_sprite_address	=		$8		; 2 Bytes
 	player_grounded_bool			=		$a	    ; 1 byte
 	player_acceleration				=		$11     ; 1 Byte 
-	frame_counter 					=		$10 	; 1 Byte
+	frame_counter 					=		$10     ; 1 Byte
 	stun_timer						=		$12		; 1 Byte
 	player_direction				=		$13		; 1 Byte
 	player_position_lo				=		$14		; 1 Byte
@@ -307,6 +307,7 @@ Gameplay_Loop:
 ;.Draw_Penguin_Stunned_R
 	; mov#>Penguin_Stunned_R, player_sprite_Address+1
 	; mov#<Penguin_Stunned_R, player_sprite_Address
+	; jmpf .Draw_Trot_Done
 .Jumping
 	bp player_grounded_bool, 0, .Draw_Trot_L
 	mov #<Penguin_Jump_Up_Mask, player_sprite_sprite_address
