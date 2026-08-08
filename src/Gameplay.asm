@@ -192,6 +192,7 @@ Gameplay_Loop:
 	bnz. Collision_Chunk_3
     ld player_sprite_y
     mov %11111111, Collision_Flags
+    mov #2, collision_active
     ; Optionally, Maybe Try Assigning Based On Obstacle Type.
 	jmpf .Collision_Done
 .Collision_Chunk_3
