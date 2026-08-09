@@ -193,7 +193,7 @@ Gameplay_Loop:
     ld player_sprite_y
     mov %11111111, Collision_Flags
     mov #2, collision_active
-    ; Optionally, Maybe Try Assigning Based On Obstacle Type.
+    ; Optionally, Maybe Try Assigning Based On Obstacle Type, Potentially Reserving Some Flags.
 	jmpf .Collision_Done
 .Collision_Chunk_3
     sub #1 ; 8
