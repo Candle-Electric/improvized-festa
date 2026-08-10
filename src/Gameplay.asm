@@ -434,7 +434,7 @@ Gameplay_Loop:
 .OkScrewTheBoulders
 ; P_Draw_Sprite_Mask Boulder_Sprite_Address, boulder_x, boulder_y
 
-
+.Number_Overflows
 .Blit_And_Draw_Screen
 	; callf Draw_Ground
 	P_Blit_Screen
