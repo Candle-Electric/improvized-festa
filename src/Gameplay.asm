@@ -31,7 +31,7 @@ Penguin_Gameplay: ; Penguin Runner Rename
 	player_standing_bool			=		$31		; 1 Byte
 	;test_var 						=		$29		; 1 Byte
 	;boulder_x				 		= 		$2a		; 1 Byte
-	;boulder_y = $2b
+	;boulder_y 						= 		$2b		; 
     player_horizontal_acceleration  =       $32     ; 1 Byte
     collision_flags                 =       $33     ; 1 Byte
 ; Set Sprite Addresses
