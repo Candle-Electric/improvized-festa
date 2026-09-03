@@ -8,7 +8,7 @@ Penguin_Gameplay: ; Penguin Runner Rename
 	player_grounded_bool			=		$a	    ; 1 byte
 	player_acceleration				=		$11     ; 1 Byte 
 	frame_counter 					=		$10     ; 1 Byte
-	stun_timer						=		$12		; 1 Byte
+	stun_timer                      =		$12		; 1 Byte
 	player_direction				=		$13		; 1 Byte
 	player_position_lo				=		$14		; 1 Byte
 	player_position_hi				=		$15		; 1 Byte
