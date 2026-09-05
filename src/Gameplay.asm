@@ -435,6 +435,7 @@ Gameplay_Loop:
 ; P_Draw_Sprite_Mask Boulder_Sprite_Address, boulder_x, boulder_y
 
 .Number_Overflows
+	; ld distance_travelled
 .Blit_And_Draw_Screen
 	; callf Draw_Ground
 	P_Blit_Screen
