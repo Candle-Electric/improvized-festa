@@ -436,6 +436,7 @@ Gameplay_Loop:
 
 .Number_Overflows
 	; ld distance_travelled
+	; Check 7th Bit For Which Half Of Numbers.
 .Blit_And_Draw_Screen
 	; callf Draw_Ground
 	P_Blit_Screen
