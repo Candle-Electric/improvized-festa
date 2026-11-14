@@ -208,6 +208,7 @@ Gameplay_Loop:
     sub #18 ; Is Player Above Stone Rock?
 	bp acc, 7, .Collision_Chunk_5 ; If So, Player's Cleared It + The Collision Check.
     mov #1, collision_flags
+    ; set1 collision_direction_flag, 7 ; Whichever Of The Collisiok Flags, this'll Decide Whether The First Bounce Is Left Or Rightward.
 .Alternate_Collision
     bn boulder_chunk_offset, 1, .Collision_Done ; Skip Check For Collision When Not In Boulder Range.
     ; L.D. Obstacle Type Here And Determine Jump Path .Handle_Collision_Result
