@@ -213,6 +213,7 @@ Gameplay_Loop:
     bn boulder_chunk_offset, 1, .Collision_Done ; Skip Check For Collision When Not In Boulder Range.
     ; L.D. Obstacle Type Here And Determine Jump Path .Handle_Collision_Result
 	ld Collision_Flags
+	; Check Ground, And Bounce + Switch Directions If So.
 .Collision_RegularBoulder
     ld player_sprite_y
     sub #17
